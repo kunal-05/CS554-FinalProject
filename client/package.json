@@ -3,12 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.16",
+    "@mui/x-date-pickers": "^6.0.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "imagemagick": "^0.1.3",
+    "install": "^0.13.0",
+    "list-of-us-cities": "^1.0.1",
+    "npm": "^9.6.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
+    "us-state-codes": "^1.1.2",
+    "us-states": "^0.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
