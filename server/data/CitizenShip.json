@@ -1,0 +1,977 @@
+[
+    {
+        "country_of_citizenship": "AFGHANISTAN",
+        "case_status": "6",
+        "_id": "5d254981-006b-4ad6-a022-c7bad6f81a93"
+    },
+    {
+        "country_of_citizenship": "ALBANIA",
+        "case_status": "78",
+        "_id": "9ec03b34-453b-43de-ab67-8ff183a2e11c"
+    },
+    {
+        "country_of_citizenship": "ALGERIA",
+        "case_status": "20",
+        "_id": "acc640fa-4f5c-48b8-b722-b2ed4d37108e"
+    },
+    {
+        "country_of_citizenship": "ANDORRA",
+        "case_status": "1",
+        "_id": "ca8ad5cb-43e5-4fc3-bca9-711521a3351a"
+    },
+    {
+        "country_of_citizenship": "ANGOLA",
+        "case_status": "2",
+        "_id": "12493ad7-01fa-42e7-aaa3-bf1475507ea4"
+    },
+    {
+        "country_of_citizenship": "ANTIGUA AND BARBUDA",
+        "case_status": "11",
+        "_id": "5ec904ad-65e1-4111-a5fa-7c5a7bae8597"
+    },
+    {
+        "country_of_citizenship": "ARGENTINA",
+        "case_status": "669",
+        "_id": "1384001a-dd16-4282-aaad-6253399f2f5d"
+    },
+    {
+        "country_of_citizenship": "ARMENIA",
+        "case_status": "95",
+        "_id": "51b1c8b7-4631-447a-ba03-f2e711876b0c"
+    },
+    {
+        "country_of_citizenship": "AUSTRALIA",
+        "case_status": "563",
+        "_id": "3887abfa-632d-4dcd-878c-5aa50b95d96a"
+    },
+    {
+        "country_of_citizenship": "AUSTRIA",
+        "case_status": "112",
+        "_id": "f1b289f3-c68e-4c94-b8e6-8d1c53681413"
+    },
+    {
+        "country_of_citizenship": "AZERBAIJAN",
+        "case_status": "52",
+        "_id": "458b2a89-0c55-4ab2-b24d-2fdeff982676"
+    },
+    {
+        "country_of_citizenship": "BAHAMAS",
+        "case_status": "84",
+        "_id": "710c0d83-e903-4ee7-a05f-8d7e6c9d9911"
+    },
+    {
+        "country_of_citizenship": "BAHRAIN",
+        "case_status": "6",
+        "_id": "88fa9557-bd98-4749-be6d-cabfb0e033c0"
+    },
+    {
+        "country_of_citizenship": "BANGLADESH",
+        "case_status": "661",
+        "_id": "b9ea6f57-5bce-4d4b-98ca-4028806dd21e"
+    },
+    {
+        "country_of_citizenship": "BARBADOS",
+        "case_status": "44",
+        "_id": "bcdf59bd-5b55-4a6b-8eca-3aef0aa9ad17"
+    },
+    {
+        "country_of_citizenship": "BELARUS",
+        "case_status": "259",
+        "_id": "626fdec1-6029-4db6-8c1a-686ee59f013e"
+    },
+    {
+        "country_of_citizenship": "BELGIUM",
+        "case_status": "144",
+        "_id": "89a830c4-e14b-4154-881a-1a8012673477"
+    },
+    {
+        "country_of_citizenship": "BELIZE",
+        "case_status": "28",
+        "_id": "436f0ff8-c515-4699-a8f9-db22860a926f"
+    },
+    {
+        "country_of_citizenship": "BENIN",
+        "case_status": "20",
+        "_id": "6ff8eb30-88b8-4f2f-bc33-fcedd1d60206"
+    },
+    {
+        "country_of_citizenship": "BERMUDA",
+        "case_status": "8",
+        "_id": "a19902c6-1483-4589-885f-4fde238aba50"
+    },
+    {
+        "country_of_citizenship": "BHUTAN",
+        "case_status": "4",
+        "_id": "9f41acf2-fed8-4400-9f84-a4b1e65006f5"
+    },
+    {
+        "country_of_citizenship": "BOLIVIA",
+        "case_status": "109",
+        "_id": "67654d82-d115-45c4-a48f-e6ee55462661"
+    },
+    {
+        "country_of_citizenship": "BOSNIA AND HERZEGOVINA",
+        "case_status": "41",
+        "_id": "2d1c325a-e635-4842-8f71-d9d16fbc0940"
+    },
+    {
+        "country_of_citizenship": "BOTSWANA",
+        "case_status": "12",
+        "_id": "a74c175c-7c98-4348-b3b4-100343d324e2"
+    },
+    {
+        "country_of_citizenship": "BRAZIL",
+        "case_status": "1472",
+        "_id": "0623b6c2-565d-4fb8-a2b3-93adf031fe37"
+    },
+    {
+        "country_of_citizenship": "BRITISH VIRGIN ISLANDS",
+        "case_status": "1",
+        "_id": "dd20bfef-0d1f-4149-a069-e983681fa334"
+    },
+    {
+        "country_of_citizenship": "BRUNEI",
+        "case_status": "3",
+        "_id": "c8ccd46f-ede7-4d9a-917a-0b5b7ac1bd44"
+    },
+    {
+        "country_of_citizenship": "BULGARIA",
+        "case_status": "461",
+        "_id": "4a0de32a-01ba-4cc7-bde5-873292028ae2"
+    },
+    {
+        "country_of_citizenship": "BURKINA FASO",
+        "case_status": "12",
+        "_id": "8ee60511-d7fd-41bb-92ea-e1ce1f44d1c2"
+    },
+    {
+        "country_of_citizenship": "BURMA (MYANMAR)",
+        "case_status": "64",
+        "_id": "13f11cc5-ea36-4929-8342-ea70b377bc24"
+    },
+    {
+        "country_of_citizenship": "BURUNDI",
+        "case_status": "5",
+        "_id": "f2d768d1-2b58-46c8-a678-3afedb2b6c25"
+    },
+    {
+        "country_of_citizenship": "CAMBODIA",
+        "case_status": "28",
+        "_id": "36fc0b8a-132d-4b78-827b-dc7763460dbe"
+    },
+    {
+        "country_of_citizenship": "CAMEROON",
+        "case_status": "93",
+        "_id": "7b628d7a-6aef-4d05-811e-6586c24741a7"
+    },
+    {
+        "country_of_citizenship": "CANADA",
+        "case_status": "8725",
+        "_id": "fa7ce07c-6d1b-44cd-a194-a5992a0a95d1"
+    },
+    {
+        "country_of_citizenship": "CAYMAN ISLANDS",
+        "case_status": "2",
+        "_id": "e358c4f6-33f1-4648-8c52-90321e3468cd"
+    },
+    {
+        "country_of_citizenship": "CENTRAL AFRICAN REPUBLIC",
+        "case_status": "1",
+        "_id": "2c12f5ca-7db3-487b-a33f-4718e56cfb37"
+    },
+    {
+        "country_of_citizenship": "CHAD",
+        "case_status": "1",
+        "_id": "1bdf05d2-08af-4747-95a7-d926d8ec74fa"
+    },
+    {
+        "country_of_citizenship": "CHILE",
+        "case_status": "248",
+        "_id": "35392680-e4e3-45da-be04-7b288203a4cc"
+    },
+    {
+        "country_of_citizenship": "CHINA",
+        "case_status": "19585",
+        "_id": "d1e2de36-e021-4df6-b17e-b569705a5795"
+    },
+    {
+        "country_of_citizenship": "COLOMBIA",
+        "case_status": "1144",
+        "_id": "bd294023-196a-4c12-b069-798516c5700f"
+    },
+    {
+        "country_of_citizenship": "COSTA RICA",
+        "case_status": "127",
+        "_id": "86561dc2-85b3-4077-bae6-2bf2dd1d38b3"
+    },
+    {
+        "country_of_citizenship": "COTE d'IVOIRE",
+        "case_status": "11",
+        "_id": "9b81cd5c-df6d-4e0a-ab37-b42e455cbb60"
+    },
+    {
+        "country_of_citizenship": "CROATIA",
+        "case_status": "73",
+        "_id": "c2cf09b9-3a36-41f9-a8a1-48942bedeb16"
+    },
+    {
+        "country_of_citizenship": "CYPRUS",
+        "case_status": "43",
+        "_id": "21f5ada1-d3bb-451e-8679-83bb6c77fa9a"
+    },
+    {
+        "country_of_citizenship": "CZECH REPUBLIC",
+        "case_status": "113",
+        "_id": "d2cbe089-7876-4e15-81bc-1c19659f44e2"
+    },
+    {
+        "country_of_citizenship": "DEMOCRATIC REPUBLIC OF CONGO",
+        "case_status": "13",
+        "_id": "0640c66b-fb66-4683-940f-a99319ca4def"
+    },
+    {
+        "country_of_citizenship": "DENMARK",
+        "case_status": "127",
+        "_id": "8ea48ad1-7404-4974-8042-d46f539c8a6c"
+    },
+    {
+        "country_of_citizenship": "DOMINICA",
+        "case_status": "27",
+        "_id": "a8e8fc93-56dd-439e-9ae3-cc7eb6788431"
+    },
+    {
+        "country_of_citizenship": "DOMINICAN REPUBLIC",
+        "case_status": "209",
+        "_id": "0990d2e0-4c01-4b35-8c80-0dbeb3ee2cc9"
+    },
+    {
+        "country_of_citizenship": "ECUADOR",
+        "case_status": "233",
+        "_id": "75c15e8f-0a9e-4c86-b196-062da29f0b29"
+    },
+    {
+        "country_of_citizenship": "EGYPT",
+        "case_status": "671",
+        "_id": "0aff3055-2d67-4ce8-9df9-47a532038af8"
+    },
+    {
+        "country_of_citizenship": "EL SALVADOR",
+        "case_status": "112",
+        "_id": "3dc56e9a-a185-46b2-acca-820bf9b41bfd"
+    },
+    {
+        "country_of_citizenship": "EQUATORIAL GUINEA",
+        "case_status": "1",
+        "_id": "6d9a898b-3614-4964-873e-7eefbf743321"
+    },
+    {
+        "country_of_citizenship": "ERITREA",
+        "case_status": "10",
+        "_id": "d26ea856-f0e9-4ad4-b75d-98b234358c60"
+    },
+    {
+        "country_of_citizenship": "ESTONIA",
+        "case_status": "24",
+        "_id": "df32aa43-d83a-43b2-be12-10f7bc53420c"
+    },
+    {
+        "country_of_citizenship": "ETHIOPIA",
+        "case_status": "126",
+        "_id": "8af83c28-0ba3-4ada-a368-2ce22955af49"
+    },
+    {
+        "country_of_citizenship": "FIJI",
+        "case_status": "5",
+        "_id": "30d3379c-623b-4b8a-8ace-8f0d47db0270"
+    },
+    {
+        "country_of_citizenship": "FINLAND",
+        "case_status": "91",
+        "_id": "ea4f5c07-cd98-4efa-a0e6-c9683b883c1f"
+    },
+    {
+        "country_of_citizenship": "FRANCE",
+        "case_status": "1937",
+        "_id": "9d40a922-4bcb-4b50-a86e-4fe49b2c274c"
+    },
+    {
+        "country_of_citizenship": "GABON",
+        "case_status": "6",
+        "_id": "96f581d1-23d2-4f2f-a1d8-599fcf8e37eb"
+    },
+    {
+        "country_of_citizenship": "GAMBIA",
+        "case_status": "8",
+        "_id": "89d6aba3-d7e3-47d6-af09-ae2d7363d764"
+    },
+    {
+        "country_of_citizenship": "GEORGIA",
+        "case_status": "51",
+        "_id": "9b99a33a-8781-474a-91cc-dfef5281897f"
+    },
+    {
+        "country_of_citizenship": "GERMANY",
+        "case_status": "1370",
+        "_id": "9f4645bf-b588-4a9c-ba47-a6cfffdc8907"
+    },
+    {
+        "country_of_citizenship": "GHANA",
+        "case_status": "288",
+        "_id": "d0727ddb-b996-472e-99fc-db9a0899872a"
+    },
+    {
+        "country_of_citizenship": "GREECE",
+        "case_status": "380",
+        "_id": "c0351070-212d-476e-949e-957444507ee3"
+    },
+    {
+        "country_of_citizenship": "GRENADA",
+        "case_status": "58",
+        "_id": "20449c43-98c1-44eb-b557-3e9eccf72467"
+    },
+    {
+        "country_of_citizenship": "GUATEMALA",
+        "case_status": "89",
+        "_id": "843f268b-ea32-479e-b980-cd1fccfec5c3"
+    },
+    {
+        "country_of_citizenship": "GUINEA",
+        "case_status": "4",
+        "_id": "527fe813-f8b4-4eb7-a6f0-2c66d5deeed0"
+    },
+    {
+        "country_of_citizenship": "GUINEA-BISSAU",
+        "case_status": "1",
+        "_id": "32c17642-75b3-480e-b4c7-c0b2b15dd3b7"
+    },
+    {
+        "country_of_citizenship": "GUYANA",
+        "case_status": "28",
+        "_id": "22d0ddcb-b94d-4f53-bd7a-2cd411c3e008"
+    },
+    {
+        "country_of_citizenship": "HAITI",
+        "case_status": "25",
+        "_id": "68e30e9c-1b9b-4769-9305-90d62d23ef37"
+    },
+    {
+        "country_of_citizenship": "HONDURAS",
+        "case_status": "159",
+        "_id": "7c21ad38-a391-4ad5-9b11-4a40a3bcddad"
+    },
+    {
+        "country_of_citizenship": "HONG KONG",
+        "case_status": "382",
+        "_id": "9f591b31-8094-4e83-9b11-ba57e7718916"
+    },
+    {
+        "country_of_citizenship": "HUNGARY",
+        "case_status": "159",
+        "_id": "a49405eb-eaec-4edb-95d0-675caf4329ab"
+    },
+    {
+        "country_of_citizenship": "ICELAND",
+        "case_status": "45",
+        "_id": "30ce5acb-7723-4857-aa5d-55162b9b595b"
+    },
+    {
+        "country_of_citizenship": "INDIA",
+        "case_status": "165902",
+        "_id": "c5d43800-4128-4218-970b-dfa039e3bfc3"
+    },
+    {
+        "country_of_citizenship": "INDONESIA",
+        "case_status": "605",
+        "_id": "683fdeb2-f379-4054-8b7b-73dc7e02d4e2"
+    },
+    {
+        "country_of_citizenship": "IRAN",
+        "case_status": "877",
+        "_id": "84f2a160-d9a7-4623-8edf-cb29ff4aca84"
+    },
+    {
+        "country_of_citizenship": "IRAQ",
+        "case_status": "21",
+        "_id": "48ff0710-4d82-452f-a488-ed782b4cab2f"
+    },
+    {
+        "country_of_citizenship": "IRELAND",
+        "case_status": "546",
+        "_id": "24d93b25-68c0-461f-af80-bf90d7d923ce"
+    },
+    {
+        "country_of_citizenship": "ISRAEL",
+        "case_status": "985",
+        "_id": "57b3fc72-77f4-42ac-b2ab-aa7d42984e6a"
+    },
+    {
+        "country_of_citizenship": "ITALY",
+        "case_status": "1053",
+        "_id": "8487dfab-66b6-4a72-8c15-197831fc2149"
+    },
+    {
+        "country_of_citizenship": "IVORY COAST",
+        "case_status": "19",
+        "_id": "26718c52-46c3-4c74-ab36-309b28177e70"
+    },
+    {
+        "country_of_citizenship": "JAMAICA",
+        "case_status": "412",
+        "_id": "d4f428f4-cad6-4ee6-9619-e167285c7aaf"
+    },
+    {
+        "country_of_citizenship": "JAPAN",
+        "case_status": "1493",
+        "_id": "7a42036a-ab29-4924-924a-cdcf118af6f4"
+    },
+    {
+        "country_of_citizenship": "JORDAN",
+        "case_status": "442",
+        "_id": "7b8dab62-ce4d-41df-a2ff-91701603d696"
+    },
+    {
+        "country_of_citizenship": "KAZAKHSTAN",
+        "case_status": "86",
+        "_id": "03c73845-886c-4d3d-98da-0b3109312193"
+    },
+    {
+        "country_of_citizenship": "KENYA",
+        "case_status": "330",
+        "_id": "5a0ad725-89fe-4952-97e7-3a99ef3de31b"
+    },
+    {
+        "country_of_citizenship": "KIRIBATI",
+        "case_status": "1",
+        "_id": "8a26948b-8cdb-4dcb-8724-9c45db55dfa6"
+    },
+    {
+        "country_of_citizenship": "KOSOVO",
+        "case_status": "21",
+        "_id": "84f20be3-038f-478a-8261-d442adfdc6d4"
+    },
+    {
+        "country_of_citizenship": "KUWAIT",
+        "case_status": "13",
+        "_id": "55bd3cc8-33b9-4aca-b283-d4d4cf639a1e"
+    },
+    {
+        "country_of_citizenship": "KYRGYZSTAN",
+        "case_status": "31",
+        "_id": "80eb9840-61f1-4097-a78d-8f91fd4311de"
+    },
+    {
+        "country_of_citizenship": "LAOS",
+        "case_status": "2",
+        "_id": "b929b3b2-726d-45f0-a84e-d5bf34837b43"
+    },
+    {
+        "country_of_citizenship": "LATVIA",
+        "case_status": "53",
+        "_id": "a8c5df70-459e-4e1b-977d-b87748471a05"
+    },
+    {
+        "country_of_citizenship": "LEBANON",
+        "case_status": "438",
+        "_id": "18300a74-dc26-4aee-bdf1-f04085eea745"
+    },
+    {
+        "country_of_citizenship": "LESOTHO",
+        "case_status": "3",
+        "_id": "b18b3001-db2d-4e1b-a142-1c47e978e196"
+    },
+    {
+        "country_of_citizenship": "LIBERIA",
+        "case_status": "5",
+        "_id": "db404742-a427-44f6-b04d-bbb09029eb45"
+    },
+    {
+        "country_of_citizenship": "LIBYA",
+        "case_status": "55",
+        "_id": "f907a1c3-fd8d-4afb-88e7-76b0055e648b"
+    },
+    {
+        "country_of_citizenship": "LIECHTENSTEIN",
+        "case_status": "1",
+        "_id": "f50984b8-b768-4f04-82cc-a6eca14b6940"
+    },
+    {
+        "country_of_citizenship": "LITHUANIA",
+        "case_status": "58",
+        "_id": "52a5b694-074b-4386-9f7b-6cdda252c2ce"
+    },
+    {
+        "country_of_citizenship": "LUXEMBOURG",
+        "case_status": "13",
+        "_id": "fcdef2f4-2206-4d71-9a6e-ea262745bbe2"
+    },
+    {
+        "country_of_citizenship": "MACAU",
+        "case_status": "21",
+        "_id": "9d15c69a-4e83-4910-9b3c-53179b016ec5"
+    },
+    {
+        "country_of_citizenship": "MACEDONIA",
+        "case_status": "52",
+        "_id": "aee370df-218b-4fbf-8e03-54d36b797ed5"
+    },
+    {
+        "country_of_citizenship": "MADAGASCAR",
+        "case_status": "11",
+        "_id": "5b66908a-d02a-4e7a-a29a-af59908521b3"
+    },
+    {
+        "country_of_citizenship": "MALAWI",
+        "case_status": "18",
+        "_id": "e97c11e0-d408-4edd-9d32-91dc1f8869b6"
+    },
+    {
+        "country_of_citizenship": "MALAYSIA",
+        "case_status": "719",
+        "_id": "b52c073a-d1b7-48af-92ef-36d0b8581628"
+    },
+    {
+        "country_of_citizenship": "MALDIVES",
+        "case_status": "4",
+        "_id": "5c2640cd-18d7-4509-8f47-4951bfc34303"
+    },
+    {
+        "country_of_citizenship": "MALI",
+        "case_status": "14",
+        "_id": "346e0ed1-ece0-4d4b-b9ca-9cd4f1bb8053"
+    },
+    {
+        "country_of_citizenship": "MALTA",
+        "case_status": "5",
+        "_id": "e5f09812-ba71-4f10-8cc7-af115299a2a7"
+    },
+    {
+        "country_of_citizenship": "MAURITANIA",
+        "case_status": "3",
+        "_id": "19fc78c8-806c-4fc4-a452-e9a28de44af8"
+    },
+    {
+        "country_of_citizenship": "MAURITIUS",
+        "case_status": "25",
+        "_id": "3611221b-a406-4bf5-8ef7-e8e1005bc6d5"
+    },
+    {
+        "country_of_citizenship": "MEXICO",
+        "case_status": "3353",
+        "_id": "1a7928a0-60fb-4974-9479-9c7fd707ee9c"
+    },
+    {
+        "country_of_citizenship": "MOLDOVA",
+        "case_status": "77",
+        "_id": "ec505c48-0f6c-43dd-b22f-b506765b1b88"
+    },
+    {
+        "country_of_citizenship": "MONACO",
+        "case_status": "1",
+        "_id": "e16b338b-840b-4781-ae2c-34b729862f83"
+    },
+    {
+        "country_of_citizenship": "MONGOLIA",
+        "case_status": "62",
+        "_id": "a51b5f49-b0ff-4f27-9566-8874eaba2229"
+    },
+    {
+        "country_of_citizenship": "MONTENEGRO",
+        "case_status": "7",
+        "_id": "10eebbfa-c431-40e2-82f6-6a1d53528891"
+    },
+    {
+        "country_of_citizenship": "MOROCCO",
+        "case_status": "125",
+        "_id": "8e086a8a-0e78-4ad4-8cd8-e10fd50cf594"
+    },
+    {
+        "country_of_citizenship": "MOZAMBIQUE",
+        "case_status": "3",
+        "_id": "9df07a0a-8b16-4cd8-8499-f16d669ad352"
+    },
+    {
+        "country_of_citizenship": "NAMIBIA",
+        "case_status": "6",
+        "_id": "12b2acb0-7f12-42f4-b3ef-19df9090fc79"
+    },
+    {
+        "country_of_citizenship": "NEPAL",
+        "case_status": "2155",
+        "_id": "86799011-075d-42b7-9d0a-7123928e355b"
+    },
+    {
+        "country_of_citizenship": "NETHERLANDS",
+        "case_status": "288",
+        "_id": "5b3752a2-972c-4359-92d3-5585bc10421e"
+    },
+    {
+        "country_of_citizenship": "NETHERLANDS ANTILLES",
+        "case_status": "1",
+        "_id": "16ceca7d-9925-4574-84d6-fece5e134e6a"
+    },
+    {
+        "country_of_citizenship": "NEW ZEALAND",
+        "case_status": "267",
+        "_id": "7c0fcb31-a438-4844-af76-84b828711069"
+    },
+    {
+        "country_of_citizenship": "NICARAGUA",
+        "case_status": "47",
+        "_id": "bb1b1f39-5e82-4036-9253-0553c5bcabbf"
+    },
+    {
+        "country_of_citizenship": "NIGER",
+        "case_status": "5",
+        "_id": "756098a3-5c14-458f-be1f-9a9dd51468fa"
+    },
+    {
+        "country_of_citizenship": "NIGERIA",
+        "case_status": "860",
+        "_id": "9e344e78-633d-4a21-b7a8-a5bc5fb3c036"
+    },
+    {
+        "country_of_citizenship": "NORTH KOREA",
+        "case_status": "1",
+        "_id": "67be0a2f-960d-4600-b0d7-9ebf9b03ecf1"
+    },
+    {
+        "country_of_citizenship": "NORWAY",
+        "case_status": "66",
+        "_id": "07fa12d5-b88d-4466-9284-721bf3a220fc"
+    },
+    {
+        "country_of_citizenship": "OMAN",
+        "case_status": "3",
+        "_id": "74671af5-3ec5-4740-a5b2-6c75e46425ea"
+    },
+    {
+        "country_of_citizenship": "PAKISTAN",
+        "case_status": "2424",
+        "_id": "ace3f5af-8e2f-438d-a257-d9dd8015aa23"
+    },
+    {
+        "country_of_citizenship": "PALESTINE",
+        "case_status": "52",
+        "_id": "22eb1cc5-b45c-4fc8-9086-11520f5c3b75"
+    },
+    {
+        "country_of_citizenship": "PALESTINIAN TERRITORIES",
+        "case_status": "8",
+        "_id": "9c96a8e5-cdbb-40cf-9cc3-fd4c655eaaca"
+    },
+    {
+        "country_of_citizenship": "PANAMA",
+        "case_status": "71",
+        "_id": "6085e7dd-e364-4585-97d7-57c0459e17f5"
+    },
+    {
+        "country_of_citizenship": "PAPUA NEW GUINEA",
+        "case_status": "1",
+        "_id": "9b0a64c3-3919-4099-891f-1ae15f14074a"
+    },
+    {
+        "country_of_citizenship": "PARAGUAY",
+        "case_status": "34",
+        "_id": "d631c280-2ad0-42ad-8cc6-87fd673077dd"
+    },
+    {
+        "country_of_citizenship": "PERU",
+        "case_status": "498",
+        "_id": "5db24abf-671b-49da-b15b-7230dcb0f95a"
+    },
+    {
+        "country_of_citizenship": "PHILIPPINES",
+        "case_status": "4879",
+        "_id": "42cee716-dc9a-4980-bc9a-bc0c9fd73517"
+    },
+    {
+        "country_of_citizenship": "POLAND",
+        "case_status": "501",
+        "_id": "e53a9809-0941-40cb-8bb8-6283e548acc5"
+    },
+    {
+        "country_of_citizenship": "PORTUGAL",
+        "case_status": "182",
+        "_id": "bfb7b89d-29f3-4039-95bc-397a82281778"
+    },
+    {
+        "country_of_citizenship": "QATAR",
+        "case_status": "1",
+        "_id": "0b126cb4-0c46-477e-8c23-558ccf18c731"
+    },
+    {
+        "country_of_citizenship": "REPUBLIC OF CONGO",
+        "case_status": "1",
+        "_id": "8fd1852c-0c52-4cc8-a8f0-bcef1788e19b"
+    },
+    {
+        "country_of_citizenship": "ROMANIA",
+        "case_status": "615",
+        "_id": "f770a363-18f7-45be-8761-fe76629173e2"
+    },
+    {
+        "country_of_citizenship": "RUSSIA",
+        "case_status": "1600",
+        "_id": "82bfd191-ea96-47f2-a175-fe0407a69e4a"
+    },
+    {
+        "country_of_citizenship": "RWANDA",
+        "case_status": "13",
+        "_id": "3a7b8371-efaa-4abf-b0d1-4844937690ba"
+    },
+    {
+        "country_of_citizenship": "SAINT VINCENT AND THE GRENADINES",
+        "case_status": "6",
+        "_id": "6bd6305c-609c-4418-9923-72635084f6bc"
+    },
+    {
+        "country_of_citizenship": "SAO TOME AND PRINCIPE",
+        "case_status": "1",
+        "_id": "fa570dc4-90d7-4105-ac1f-61d6118bf77b"
+    },
+    {
+        "country_of_citizenship": "SAUDI ARABIA",
+        "case_status": "42",
+        "_id": "d27cbc0c-6b01-4370-83a2-e089a72cb78e"
+    },
+    {
+        "country_of_citizenship": "SENEGAL",
+        "case_status": "47",
+        "_id": "382fd514-557f-4716-bd42-ad9d01af402b"
+    },
+    {
+        "country_of_citizenship": "SERBIA",
+        "case_status": "152",
+        "_id": "8775ce9b-18cb-4ede-b072-f492ef211a17"
+    },
+    {
+        "country_of_citizenship": "SERBIA AND MONTENEGRO",
+        "case_status": "45",
+        "_id": "52ba92d9-51f9-45c4-826e-7f73771d8562"
+    },
+    {
+        "country_of_citizenship": "SEYCHELLES",
+        "case_status": "1",
+        "_id": "ff8cc700-59a5-46c1-a42b-33a86250f94f"
+    },
+    {
+        "country_of_citizenship": "SIERRA LEONE",
+        "case_status": "6",
+        "_id": "c7e01b56-5ddb-4907-ba83-180b80eda17f"
+    },
+    {
+        "country_of_citizenship": "SINGAPORE",
+        "case_status": "514",
+        "_id": "27edea01-bc58-43ed-af06-281fee55f59e"
+    },
+    {
+        "country_of_citizenship": "SLOVAKIA",
+        "case_status": "80",
+        "_id": "b970ef99-4c08-4235-ab4c-1f1506f0e324"
+    },
+    {
+        "country_of_citizenship": "SLOVENIA",
+        "case_status": "27",
+        "_id": "04f48850-032a-46f3-9db5-65f15f216bbb"
+    },
+    {
+        "country_of_citizenship": "SOMALIA",
+        "case_status": "1",
+        "_id": "1d9498b4-10dd-4a58-8b40-b3b13e6da340"
+    },
+    {
+        "country_of_citizenship": "SOUTH AFRICA",
+        "case_status": "421",
+        "_id": "68259ae7-4ba5-4c28-84b3-c3116d2901dd"
+    },
+    {
+        "country_of_citizenship": "SOUTH KOREA",
+        "case_status": "5644",
+        "_id": "b436b76d-7ed0-4623-a443-672cffae6734"
+    },
+    {
+        "country_of_citizenship": "SOUTH SUDAN",
+        "case_status": "2",
+        "_id": "dbd3fd80-db90-41aa-861e-7b0eecad1f91"
+    },
+    {
+        "country_of_citizenship": "SOVIET UNION",
+        "case_status": "1",
+        "_id": "6b7f5765-281b-47ec-a809-ec2591029e5e"
+    },
+    {
+        "country_of_citizenship": "SPAIN",
+        "case_status": "872",
+        "_id": "5fa79ea9-ab66-4f9f-9502-fb505ba47650"
+    },
+    {
+        "country_of_citizenship": "SRI LANKA",
+        "case_status": "450",
+        "_id": "5ce94547-dacd-4dc9-9deb-d8a8e7eb7bbf"
+    },
+    {
+        "country_of_citizenship": "ST KITTS AND NEVIS",
+        "case_status": "12",
+        "_id": "d1ee5187-1958-49b8-a69e-8fb0e12495df"
+    },
+    {
+        "country_of_citizenship": "ST LUCIA",
+        "case_status": "47",
+        "_id": "b1783e3e-310b-410a-ac68-fbfdd1b9235b"
+    },
+    {
+        "country_of_citizenship": "ST VINCENT",
+        "case_status": "9",
+        "_id": "7f1fa55e-7dc0-4146-910d-d0c9e1a26a7d"
+    },
+    {
+        "country_of_citizenship": "SUDAN",
+        "case_status": "17",
+        "_id": "2e83bac5-525d-4579-bcd5-01a4e2e05b44"
+    },
+    {
+        "country_of_citizenship": "SURINAME",
+        "case_status": "8",
+        "_id": "9a74aba6-5a88-48f1-a337-19787fbaed84"
+    },
+    {
+        "country_of_citizenship": "SWAZILAND",
+        "case_status": "4",
+        "_id": "db539712-a41a-4fa1-8509-ecd400472d8f"
+    },
+    {
+        "country_of_citizenship": "SWEDEN",
+        "case_status": "277",
+        "_id": "835929f4-7fb6-4bb0-a4a3-7c7e6199b3b6"
+    },
+    {
+        "country_of_citizenship": "SWITZERLAND",
+        "case_status": "157",
+        "_id": "a50c1f0d-887a-4e25-9a01-7f56db80a663"
+    },
+    {
+        "country_of_citizenship": "SYRIA",
+        "case_status": "259",
+        "_id": "cb4a043e-7b5b-4559-bacb-2c0a5b112510"
+    },
+    {
+        "country_of_citizenship": "TAIWAN",
+        "case_status": "2637",
+        "_id": "0ffe3331-251b-49ff-9ec0-2d12392c58bd"
+    },
+    {
+        "country_of_citizenship": "TAJIKISTAN",
+        "case_status": "19",
+        "_id": "23adbce1-961b-48e8-887e-832e39c11c47"
+    },
+    {
+        "country_of_citizenship": "TANZANIA",
+        "case_status": "70",
+        "_id": "cd44a4fe-baca-49b9-a901-e04f65da3afa"
+    },
+    {
+        "country_of_citizenship": "THAILAND",
+        "case_status": "441",
+        "_id": "0af077a6-4cd5-42d9-ace4-7d855f0ca8ad"
+    },
+    {
+        "country_of_citizenship": "TOGO",
+        "case_status": "14",
+        "_id": "edf72780-fe52-439c-b557-516ea492b5f9"
+    },
+    {
+        "country_of_citizenship": "TRINIDAD AND TOBAGO",
+        "case_status": "246",
+        "_id": "6d8f79c9-c215-468f-bb79-4b575ec603dc"
+    },
+    {
+        "country_of_citizenship": "TUNISIA",
+        "case_status": "44",
+        "_id": "0111b3c8-7035-46ae-847a-f252155faca8"
+    },
+    {
+        "country_of_citizenship": "TURKEY",
+        "case_status": "1712",
+        "_id": "32377f4c-ec3e-4837-b24e-4f60a8c5f264"
+    },
+    {
+        "country_of_citizenship": "TURKMENISTAN",
+        "case_status": "23",
+        "_id": "a7d60d88-59be-4b56-8b1e-20ab209e628e"
+    },
+    {
+        "country_of_citizenship": "TURKS AND CAICOS ISLANDS",
+        "case_status": "2",
+        "_id": "59a96a33-790c-405a-a381-4200643c5132"
+    },
+    {
+        "country_of_citizenship": "UGANDA",
+        "case_status": "43",
+        "_id": "90153529-dddf-4529-af20-e4129ac4bf8c"
+    },
+    {
+        "country_of_citizenship": "UKRAINE",
+        "case_status": "939",
+        "_id": "f84d874f-b1ef-4c66-bb2b-939baadb327b"
+    },
+    {
+        "country_of_citizenship": "UNITED ARAB EMIRATES",
+        "case_status": "7",
+        "_id": "9bbb3830-76d2-4f02-95a0-338fc69247cd"
+    },
+    {
+        "country_of_citizenship": "UNITED KINGDOM",
+        "case_status": "2821",
+        "_id": "f4477956-e4fe-4edd-a0c4-926c51a8fdba"
+    },
+    {
+        "country_of_citizenship": "UNITED STATES OF AMERICA",
+        "case_status": "436",
+        "_id": "75550123-43fd-4774-9fd4-ac156640e469"
+    },
+    {
+        "country_of_citizenship": "URUGUAY",
+        "case_status": "71",
+        "_id": "340375b6-4bf4-4247-801f-1ca7626236d9"
+    },
+    {
+        "country_of_citizenship": "UZBEKISTAN",
+        "case_status": "85",
+        "_id": "218dd851-e110-40c3-a03e-9e81ffe1f71a"
+    },
+    {
+        "country_of_citizenship": "VANUATU",
+        "case_status": "2",
+        "_id": "6ef08297-ab93-4c1a-82cc-2d393b8989f0"
+    },
+    {
+        "country_of_citizenship": "VENEZUELA",
+        "case_status": "1253",
+        "_id": "b91d2911-3ed8-4d3e-8850-e23c001515a5"
+    },
+    {
+        "country_of_citizenship": "VIETNAM",
+        "case_status": "589",
+        "_id": "d10aa86e-fbc6-4ae7-9382-73392d376b84"
+    },
+    {
+        "country_of_citizenship": "YEMEN",
+        "case_status": "16",
+        "_id": "ac770c97-8089-4898-a3c9-cc8fd0ea1b63"
+    },
+    {
+        "country_of_citizenship": "YUGOSLAVIA",
+        "case_status": "5",
+        "_id": "d866c1b8-8126-45a8-b0a9-95aa032f4d4a"
+    },
+    {
+        "country_of_citizenship": "ZAMBIA",
+        "case_status": "32",
+        "_id": "825648e1-76c8-48d1-bf17-be36d2641f83"
+    },
+    {
+        "country_of_citizenship": "ZIMBABWE",
+        "case_status": "136",
+        "_id": "c0a58cb1-383d-4042-8743-1b8c3c6c79a4"
+    }
+]

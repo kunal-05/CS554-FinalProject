@@ -3,6 +3,7 @@ const router = express.Router();
 const redis = require('redis');
 const client = redis.createClient();
 const importedData = require("../data/FinalEmployerDataJobTitle.json")
+const citizenData = require("../data/CitizenShip.json")
 client.connect().then(() => {});
 
 router.get('/', async (req, res) => {
@@ -12,6 +13,13 @@ router.get('/', async (req, res) => {
   console.log(data)
   return res.json({"data":data})
 });
+
+router.get('/employeeCitizenship', async (req, res) => {
+  console.log('Show List not cached');
+  let data = citizenData
+  return res.json({"data":data})
+});
+module.exports = router;
 
 router.get('/:id', async (req, res) => {
   console.log('data not cached');
@@ -25,4 +33,4 @@ router.get('/:id', async (req, res) => {
   console.log("SHowdata from backeend-->",showData);
   return res.json({"data":showData? showData: 'No Data'})
 });
-module.exports = router;
+
