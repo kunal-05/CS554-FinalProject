@@ -19,8 +19,9 @@ import FirstPageIcon from '@mui/icons-material/FirstPage';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import LastPageIcon from '@mui/icons-material/LastPage';
-import data from './EmployerData.json'
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+import CircularProgress from '@mui/material/CircularProgress';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -96,26 +97,35 @@ TablePaginationActions.propTypes = {
 };
 
 
-// const rows = data
-
 export default function CustomPaginationActionsTable() {
+  const [rows, setFilteredRows] = useState([]);
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
   const [searchTerm, setSearchTerm] = useState('');
+  const [loading, setLoading] = useState(false);
+ 
+  useEffect(() => {
+    async function fetchData() {
+     const { data } = await axios.get(`http://localhost:8000/`);
+      //console.log(data)
+      setFilteredRows(data.data);
+   }
+   fetchData();
+ }, []);
 
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
     handleSearch(event.target.value);
   };
-  const [rows, setFilteredRows] = useState(data);
 
   const handleSearch = (searchTerm) => {
-    const filteredData = data.filter((row) =>
+    const filteredData = rows.filter((row) =>
       row.employer_name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredRows(filteredData);
     setPage(0);
   };
+  
   // Avoid a layout jump when reaching the last page with empty rows.
   const emptyRows =
     page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
@@ -157,7 +167,7 @@ export default function CustomPaginationActionsTable() {
           ).map((row) => (
             <TableRow key={row.employer_name}>
               <TableCell component="th" scope="row">
-              <Link to={`/employee/${row.employer_name}`}> {row.employer_name}</Link>
+              <Link to={`/employee/${row._id}`}> {row.employer_name}</Link>
               </TableCell>
               <TableCell style={{ width: 160 }} align="right">
                 {row.certified_count}
@@ -202,3 +212,4 @@ export default function CustomPaginationActionsTable() {
   );
  
 }
+
