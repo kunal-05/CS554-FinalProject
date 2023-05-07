@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
+import './Company.css';
 import PropTypes from "prop-types";
 import { useTheme } from "@mui/material/styles";
 import { styled } from "@mui/material/styles";
@@ -24,7 +25,7 @@ import axios from "axios";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
-    backgroundColor: theme.palette.common.black,
+    backgroundColor: theme.palette.primary.main,
     color: theme.palette.common.white,
   },
   [`&.${tableCellClasses.body}`]: {
@@ -147,11 +148,13 @@ export default function CustomPaginationActionsTable() {
   };
 
   return (
-    <div>
+    <div className="main-container">
       <TextField
-        className="search-bar"
+        className="search-container"
         label="Search Company"
+        variant="filled"
         value={searchTerm}
+        sx={{ width: 900 }}
         onChange={handleChange}
       />
 
