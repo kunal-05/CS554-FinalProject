@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@ant-design/icons": "^5.0.1",
+=======
+>>>>>>> 3480b53 (Company listing page client side initial commit)
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mkyy/mui-search-bar": "^0.5.2",
