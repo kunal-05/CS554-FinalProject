@@ -4,6 +4,7 @@ const redis = require('redis');
 const client = redis.createClient();
 const importedData = require("../data/FinalEmployerDataJobTitle.json")
 const citizenData = require("../data/CitizenShip.json")
+const yearData = require("../data/YearWise.json")
 client.connect().then(() => {});
 
 router.get('/', async (req, res) => {
@@ -19,7 +20,12 @@ router.get('/employeeCitizenship', async (req, res) => {
   let data = citizenData
   return res.json({"data":data})
 });
-module.exports = router;
+
+router.get('/yearData', async (req, res) => {
+  console.log('Show List not cached');
+  let data = yearData
+  return res.json({"data":data})
+});
 
 router.get('/:id', async (req, res) => {
   console.log('data not cached');
@@ -34,3 +40,4 @@ router.get('/:id', async (req, res) => {
   return res.json({"data":showData? showData: 'No Data'})
 });
 
+module.exports = router;

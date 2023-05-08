@@ -21,7 +21,7 @@ function App() {
           </header>
         </div>
         <Routes>
-          <Route path='/' element={<Index />} />
+          <Route path='/' element={<SignIn />} />
           <Route path='/home' element={<PrivateRoute />}>
             <Route path='/home' element={<Home />} />
           </Route>

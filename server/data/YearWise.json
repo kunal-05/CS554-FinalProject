@@ -1,0 +1,10 @@
+[
+    { "year": 2015, "certified": 11000, "denied": 2000 },
+    { "year": 2016, "certified": 15000, "denied": 1000 },
+    { "year": 2017, "certified": 25000, "denied": 6000 },
+    { "year": 2018, "certified": 59000, "denied": 10000 },
+    { "year": 2019, "certified": 63000, "denied": 13050  },
+    { "year": 2020, "certified": 70000, "denied": 10120 },
+    { "year": 2021, "certified": 68000, "denied": 12000 },
+    { "year": 2022, "certified": 82000, "denied": 15000}
+]

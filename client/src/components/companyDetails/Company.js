@@ -152,7 +152,7 @@ export default function CustomPaginationActionsTable() {
       <TextField
         className="search-container"
         label="Search Company"
-        variant="filled"
+        variant="outlined"
         value={searchTerm}
         sx={{ width: 900 }}
         onChange={handleChange}
