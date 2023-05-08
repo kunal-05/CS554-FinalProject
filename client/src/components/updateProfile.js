@@ -17,20 +17,14 @@ async function UpdateProfile(
         portfolio: portfolio,
         employment: employment,
     };
-
-    console.log("data: ", data);
-
-    // if (portfolio) {
-    //     data.portfolio = portfolio;
-    // }
-
     await userRef
         .set(data, { merge: true })
         .then(() => {
-            console.log("Document successfully written/updated!");
+            window.alert("Document successfully written/updated!");
+            //add a redirect here
         })
         .catch((error) => {
-            console.error("Error writing/updating document: ", error);
+            window.alert("Error writing/updating document: ", error);
         });
 }
 

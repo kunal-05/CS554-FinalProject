@@ -25,6 +25,17 @@ import GetAllMajors from "../data/majors";
 import GetAllEthinicity from "../data/ethinicity";
 import UpdateProfile from "./updateProfile";
 import app from "../firebase/Firebase";
+import UploadImage from "./uploadImage";
+import {
+    checkString,
+    checkEmail,
+    checkNumber,
+    checkZipCode,
+    checkSelection,
+    checkDate,
+    checkUrl,
+    compareDate,
+} from "../helpers";
 
 function EditUserDetailsPage() {
     //Create state to fetch existing data
@@ -101,13 +112,53 @@ function EditUserDetailsPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await UpdateProfile(
-            userInfo,
-            workExperience,
-            education,
-            portfolio,
-            employment
-        );
+        try {
+            //Validating all the fields
+            checkString(userInfo.firstName, "First Name");
+            checkString(userInfo.lastName, "Last Name");
+            checkEmail(userInfo.emailId);
+            checkDate(userInfo.date, "Date of Birth");
+            checkString(userInfo.address1, "Address 1");
+            checkString(userInfo.address2, "Address 2");
+            checkSelection(userInfo.city, "City");
+            checkSelection(userInfo.state, "State");
+            checkZipCode(userInfo.zipCode);
+            checkSelection(userInfo.country, "Country");
+            checkString(workExperience.jobTitle, "Job Title");
+            checkString(workExperience.companyName, "Company Name");
+            checkDate(workExperience.startDate, "Work Experience Start Date");
+            checkDate(workExperience.endDate, "Work Experience End Date");
+            compareDate(
+                workExperience.startDate,
+                workExperience.endDate,
+                "Work Experience"
+            );
+            checkString(workExperience.jobDescription, "Job Description");
+            checkString(education.universityName, "University Name");
+            checkSelection(education.degree, "Degree");
+            checkSelection(education.major, "Major");
+            checkDate(education.startDate, "Education Start Date");
+            checkDate(education.endDate, "Education End Date");
+            compareDate(education.startDate, education.endDate, "Education");
+            checkNumber(education.gpa, "GPA");
+            checkUrl(portfolio.githubUrl, "Github URL");
+            checkUrl(portfolio.linkedInUrl, "LinkedIn URL");
+            checkUrl(portfolio.otherUrl, "Other URL");
+            checkSelection(employment.ethnicity, "Ethnicity");
+            checkSelection(employment.gender, "Gender");
+            checkSelection(employment.isAuthorized, "Authorization");
+            checkSelection(employment.protectedVeteran, "Veteran Status");
+            checkSelection(employment.disability, "Disability");
+            await UpdateProfile(
+                userInfo,
+                workExperience,
+                education,
+                portfolio,
+                employment
+            );
+        } catch (e) {
+            alert(`Error in submitting the form : ${e}`);
+        }
     };
 
     React.useEffect(() => {
@@ -125,6 +176,9 @@ function EditUserDetailsPage() {
                         <Typography component="h1" variant="h4" align="center">
                             User Details
                         </Typography>
+                        {/* <UploadImage
+                            userId={"ee0f933b-ac4f-497a-9403-97fbda392155"}
+                        /> */}
                         {existingData && (
                             <form onSubmit={handleSubmit}>
                                 <Grid container spacing={3}>
@@ -354,6 +408,7 @@ function EditUserDetailsPage() {
                                             name="zipCode"
                                             required
                                             label="Zip Code"
+                                            type="string"
                                             variant="standard"
                                             fullWidth
                                             defaultValue={
