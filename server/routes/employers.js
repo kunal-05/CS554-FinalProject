@@ -2,13 +2,9 @@ const express = require("express");
 const router = express.Router();
 const redis = require("redis");
 const client = redis.createClient();
-<<<<<<< HEAD
 const importedData = require("../data/FinalEmployerDataJobTitle.json")
 const citizenData = require("../data/CitizenShip.json")
 const yearData = require("../data/YearWise.json")
-=======
-const importedData = require("../data/FinalEmployerDataJobTitle.json");
->>>>>>> d388f6a (updated emplyerDetails page and redis)
 client.connect().then(() => {});
 
 router.get("/", async (req, res) => {
