@@ -7,7 +7,8 @@ import Navigation from './Navigation/Navigation';
 import SignIn from '../components/SignIn/SignIn';
 import SignUp from '../components/SignUp/SignUp';
 import Profile from './Profile/Profile'
-import Jobs from './Jobs/Jobs'
+import Company from './companyDetails/Company'
+import Index from './Graphs/Index'
 import {AuthProvider} from '../firebase/Auth';
 import PrivateRoute from './PrivateRoute';
 function App() {
@@ -20,7 +21,7 @@ function App() {
           </header>
         </div>
         <Routes>
-          <Route path='/' element={<SignIn />} />
+          <Route path='/' element={<Index />} />
           <Route path='/home' element={<PrivateRoute />}>
             <Route path='/home' element={<Home />} />
           </Route>
@@ -28,7 +29,7 @@ function App() {
             <Route path='/account' element={<Account />} />
           </Route>
           <Route path='/jobs' element={<PrivateRoute />}>
-            <Route path='/jobs' element={<Jobs />} />
+            <Route path='/jobs' element={<Company />} />
           </Route>
           <Route path='/profile' element={<PrivateRoute />}>
             <Route path='/profile' element={<Profile />} />

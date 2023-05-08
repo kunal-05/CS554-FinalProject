@@ -34,7 +34,7 @@ function SignUp() {
   return (
     <div className='container'>
       <img src={img} width="200" height="150" alt="login" />
-      <h2>SignUp to start your journey</h2>
+      <h1>SignUp to start your journey</h1>
       {pwMatch && <h4 className='error'>{pwMatch}</h4>}
       <form onSubmit={handleSignUp}>
         <div className='form-group'>

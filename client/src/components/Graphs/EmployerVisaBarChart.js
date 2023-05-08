@@ -6,7 +6,6 @@ import React, { useState, useEffect } from "react";
 
 const CustomBarChart = () => {
   const [originaldata, setData] = useState([]);
-  // const [rows, setFilteredRows] = useState([]);
   useEffect(() => {
     async function fetchData() {
       const { data } = await axios.get(`http://localhost:8000/`);
@@ -20,7 +19,7 @@ const CustomBarChart = () => {
   }, []);
 
   return (
-    <BarChart width={600} height={400} data={originaldata} layout="vertical" margin={{ left: 100, right: 50 }}>
+    <BarChart width={600} height={600} data={originaldata} layout="vertical" margin={{ left: 100, right: 50 }}>
       <XAxis type="number" />
       <YAxis type="category" dataKey="employer_name" width={150} />
       <CartesianGrid strokeDasharray="3 3" />

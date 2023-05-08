@@ -46,7 +46,7 @@ import {
     return (
       <BarChart
         width={600}
-        height={400}
+        height={600}
         data={originaldata}
         layout="vertical"
         margin={{ left: 100, right: 50 }}
@@ -56,7 +56,7 @@ import {
         <CartesianGrid strokeDasharray="3 3" />
         <Tooltip />
         <Legend />
-        <Bar dataKey="certified_count" fill="darkred" />
+        <Bar dataKey="certified_count" fill="#2E86C1" />
       </BarChart>
     );
   };
