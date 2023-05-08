@@ -39,5 +39,4 @@ router.get('/:id', async (req, res) => {
   console.log("SHowdata from backeend-->",showData);
   return res.json({"data":showData? showData: 'No Data'})
 });
-
 module.exports = router;
