@@ -356,14 +356,14 @@ function EditProfile() {
                                                 label="Date of Birth"
                                                 variant="standard"
                                                 fullWidth
-                                                type="date-local"
+                                                type="date"
                                                 defaultValue={
                                                     existingData.userInfo.date
                                                 }
                                                 InputLabelProps={{
                                                     shrink: true,
                                                 }}
-                                                placeholder="mm/dd/yyyy"
+                                                // placeholder="mm/dd/yyyy"
                                                 onChange={(e) =>
                                                     setUserInfo({
                                                         ...userInfo,
@@ -506,7 +506,7 @@ function EditProfile() {
                                             name="zipCode"
                                             required
                                             label="Zip Code"
-                                            type="string"
+                                            type="number"
                                             variant="standard"
                                             fullWidth
                                             defaultValue={
@@ -535,7 +535,7 @@ function EditProfile() {
                                                 fullWidth
                                                 variant="standard"
                                                 label="Country"
-                                                id="country"
+                                                // id="country"
                                                 name="country"
                                                 defaultValue={
                                                     existingData.userInfo
@@ -642,7 +642,7 @@ function EditProfile() {
                                             label="Start Date"
                                             variant="standard"
                                             fullWidth
-                                            type="date-local"
+                                            type="date"
                                             defaultValue={
                                                 existingData.workExperience
                                                     .startDate
@@ -650,7 +650,7 @@ function EditProfile() {
                                             InputLabelProps={{
                                                 shrink: true,
                                             }}
-                                            placeholder="mm/dd/yyyy"
+                                            // placeholder="mm/dd/yyyy"
                                             onChange={(e) =>
                                                 setWorkExperience({
                                                     ...workExperience,
@@ -672,7 +672,7 @@ function EditProfile() {
                                             label="End Date"
                                             variant="standard"
                                             fullWidth
-                                            type="date-local"
+                                            type="date"
                                             defaultValue={
                                                 existingData.workExperience
                                                     .endDate
@@ -680,7 +680,7 @@ function EditProfile() {
                                             InputLabelProps={{
                                                 shrink: true,
                                             }}
-                                            placeholder="mm/dd/yyyy"
+                                            // placeholder="mm/dd/yyyy"
                                             onChange={(e) =>
                                                 setWorkExperience({
                                                     ...workExperience,
@@ -762,7 +762,7 @@ function EditProfile() {
                                                 fullWidth
                                                 variant="standard"
                                                 label="Degree"
-                                                id="degree"
+                                                // id="degree"
                                                 name="degree"
                                                 defaultValue={
                                                     existingData.education
@@ -802,7 +802,7 @@ function EditProfile() {
                                                 fullWidth
                                                 variant="standard"
                                                 label="Major"
-                                                id="major"
+                                                // id="major"
                                                 name="major"
                                                 defaultValue={
                                                     existingData.education.major
@@ -838,21 +838,21 @@ function EditProfile() {
                                     </Grid>
                                     <Grid item xs={12} sm={6}>
                                         <TextField
-                                            labelId="Eduduration"
+                                            // labelId="Eduduration"
                                             id="eduStartDate"
                                             name="eduStartDate"
                                             required
                                             label="Start Date"
                                             variant="standard"
                                             fullWidth
-                                            type="date-local"
+                                            type="date"
                                             defaultValue={
                                                 existingData.education.startDate
                                             }
                                             InputLabelProps={{
                                                 shrink: true,
                                             }}
-                                            placeholder="mm/dd/yyyy"
+                                            // placeholder="mm/dd/yyyy"
                                             onChange={(e) =>
                                                 setEducation({
                                                     ...education,
@@ -868,21 +868,21 @@ function EditProfile() {
                                     </Grid>
                                     <Grid item xs={12} sm={6}>
                                         <TextField
-                                            labelId="Eduduration"
+                                            // labelId="Eduduration"
                                             id="eduEnddate"
                                             name="eduEnddate"
                                             required
                                             label="End Date"
                                             variant="standard"
                                             fullWidth
-                                            type="date-local"
+                                            type="date"
                                             defaultValue={
                                                 existingData.education.endDate
                                             }
                                             InputLabelProps={{
                                                 shrink: true,
                                             }}
-                                            placeholder="mm/dd/yyyy"
+                                            // placeholder="mm/dd/yyyy"
                                             onChange={(e) =>
                                                 setEducation({
                                                     ...education,

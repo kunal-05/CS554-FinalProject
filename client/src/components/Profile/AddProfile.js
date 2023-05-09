@@ -232,7 +232,7 @@ function AddProfile() {
                                         InputLabelProps={{
                                             shrink: true,
                                         }}
-                                        placeholder="mm/dd/yyyy"
+                                        // placeholder="mm/dd/yyyy"
                                         value={userInfo.date}
                                         onChange={(e) =>
                                             setUserInfo({
@@ -359,7 +359,7 @@ function AddProfile() {
                                             fullWidth
                                             variant="standard"
                                             label="Country"
-                                            id="country"
+                                            // id="country"
                                             name="country"
                                             value={userInfo.country}
                                             onChange={(e) =>
@@ -524,7 +524,7 @@ function AddProfile() {
                                             fullWidth
                                             variant="standard"
                                             label="Degree"
-                                            id="degree"
+                                            // id="degree"
                                             name="degree"
                                             value={education.degree}
                                             onChange={(e) =>
@@ -555,7 +555,7 @@ function AddProfile() {
                                             fullWidth
                                             variant="standard"
                                             label="Major"
-                                            id="major"
+                                            // id="major"
                                             name="major"
                                             value={education.major}
                                             onChange={(e) =>
@@ -584,7 +584,7 @@ function AddProfile() {
                                 <Grid item xs={12} sm={6}>
                                     <TextField
                                         required
-                                        labelId="Eduduration"
+                                        // labelId="Eduduration"
                                         id="eduStartDate"
                                         name="eduStartDate"
                                         variant="standard"
