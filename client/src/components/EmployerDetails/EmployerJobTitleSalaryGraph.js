@@ -33,8 +33,10 @@ const Chart = () => {
   const handleDownload = () => {
     html2canvas(chartNode).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF();
-      pdf.addImage(imgData, "PNG", 0, 0);
+      const pdf = new jsPDF("landscape", "pt", "a4");
+      const imgWidth = 500;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
       pdf.save("graph.pdf");
     });
   };
