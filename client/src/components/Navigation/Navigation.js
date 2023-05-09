@@ -29,7 +29,7 @@ const NavigationAuth = () => {
         <NavLink to='/home'>Home</NavLink>
       </li>
       <li>
-        <NavLink to='/jobs'>Jobs</NavLink>
+        <NavLink to='/graphs'>Stats</NavLink>
       </li>
       <li>
         <NavLink to='/profile'>Profile</NavLink>

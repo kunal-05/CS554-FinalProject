@@ -203,7 +203,7 @@ export default function CustomPaginationActionsTable() {
             <TableFooter>
               <TableRow>
                 <TablePagination
-                  rowsPerPageOptions={[10, 15]}
+                  rowsPerPageOptions={[10]}
                   colSpan={3}
                   count={rows.length}
                   rowsPerPage={rowsPerPage}
