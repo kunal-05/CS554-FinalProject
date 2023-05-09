@@ -8,7 +8,6 @@ import SignUp from '../components/SignUp/SignUp';
 import Profile from './Profile/Profile'
 import Company from './companyDetails/Company'
 import Index from './Graphs/Index'
-import EmployerDetails from './EmployerDetails';
 import {AuthProvider} from '../firebase/Auth';
 import PrivateRoute from './PrivateRoute';
 import EmployerDetails from './EmployerDetails/EmployerDetails';
@@ -23,7 +22,7 @@ function App() {
         </div>
         <Routes>
           <Route path='/' element={<SignIn />} />
-          {/* <Route path="/employee/:id" Component = {EmployerDetails}/> */}
+          <Route path="/employee/:id" Component = {EmployerDetails}/>
           <Route path='/home' element={<PrivateRoute />}>
             <Route path='/home' element={<Company />} />
           </Route>
