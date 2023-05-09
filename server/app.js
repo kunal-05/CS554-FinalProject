@@ -4,8 +4,6 @@ const static = express.static(__dirname + "/public");
 const configRoutes = require("./routes");
 const cors = require("cors");
 
-const fs = require("fs");
-
 const firebase = require("./utils/firebase");
 global.__basedir = __dirname;
 

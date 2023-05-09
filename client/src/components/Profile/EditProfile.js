@@ -283,7 +283,15 @@ function EditProfile() {
                                                 }}
                                             />
                                         ) : (
-                                            <></>
+                                            <Avatar
+                                                alt="No Profile Picture"
+                                                sx={{
+                                                    width: 150,
+                                                    height: 150,
+                                                    bgcolor: "primary.main",
+                                                    alignItems: "left",
+                                                }}
+                                            ></Avatar>
                                         )}
                                     </Grid>
                                     <Grid item xs={12} sm={6}>
