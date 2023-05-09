@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import {
-  makeStyles,
   Card,
   CardContent,
   Typography,
   CardHeader,
   Avatar,
-} from "@material-ui/core";
+} from "@mui/material";
 import { red } from "@mui/material/colors";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
@@ -16,15 +15,17 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
+import HomeIcon from '@mui/icons-material/Home';
 import "../App";
 import EmployerJobTitleSalaryGraph from "./EmployerJobTitleSalaryGraph";
-const useStyles = makeStyles({
+const styles = {
   root: {
     display: "flex",
   },
   header1: {
     fontSize: "1em",
     fontFamily: "sans-serif",
+    marginTop: 0.5
   },
   dt: {
     fontWeight: "bold",
@@ -69,7 +70,7 @@ const useStyles = makeStyles({
     fontWeight: "bold",
     fontSize: 12,
   },
-});
+};
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -91,7 +92,7 @@ const EmployerDetails = (props) => {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-  const classes = useStyles();
+  //const styles = useStyles();
 
   const { id } = useParams();
   //id validation
@@ -137,32 +138,61 @@ const EmployerDetails = (props) => {
     const jobTitles = showData.job_title ? Object.keys(showData.job_title) : [];
     const nameSplit = showData.employer_name.split("");
     return (
-      <div className={classes.root}>
-        <Card className={classes.card} variant="outlined">
+      <div style={styles.root}>
+        <Card style={styles.card} variant="outlined">
           <CardHeader
             avatar={
               <Avatar sx={{ bgcolor: red[500] }} aria-label="companyName">
                 {nameSplit[0]}
               </Avatar>
             }
-            className={classes.titleHead}
+            style={styles.titleHead}
             title={showData.employer_name}
           />
           <CardContent>
-            <Typography
-              display="inline"
-              className={classes.header1}
-              variant={"subtitle2"}
-            >
-              <span style={{ fontWeight: "bold", textAlign: "center" }}>
-                NAME:
-              </span>
-              {showData.employer_name}
-            </Typography>
+            <div style={{ display: "flex" }}>
+              <Typography
+                display="inline"
+                style={styles.header1}
+                variant={"subtitle2"}
+              >
+                <span style={{ fontWeight: "bold" }}>Name:</span>
+              </Typography>
+              <Typography
+                // style={{ marginTop: 0.5 }}
+                style={styles.header1}
+              >
+                {showData.employer_name}
+              </Typography>
+            </div>
+            <div style={{ display: "flex" }}>
+              <Typography
+                display="inline"
+                style={styles.header1}
+                variant={"subtitle2"}
+              >
+                <span style={{ fontWeight: "bold" }}>Address:  </span>
+              </Typography>
+              <Typography style={styles.header1}>
+              {showData &&
+              showData.employer_address &&
+              showData.employer_city &&
+              showData.employer_postal_code &&
+              showData.employer_state
+                ? showData.employer_address +
+                  "," +
+                  showData.employer_city +
+                  "," +
+                  showData.employer_postal_code +
+                  "," +
+                  showData.employer_state
+                : "N/A"}
+              </Typography>
+            </div>
             <br />
-            <Typography
+            {/* <Typography
               display="inline"
-              className={classes.header1}
+              style={styles.header1}
               variant={"subtitle2"}
             >
               <span style={{ fontWeight: "bold" }}>ADDRESS: </span>
@@ -179,11 +209,11 @@ const EmployerDetails = (props) => {
                   "," +
                   showData.employer_state
                 : "N/A"}
-            </Typography>
+            </Typography> */}
             <br />
             <Typography
               display="inline"
-              className={classes.header1}
+              style={styles.header1}
               variant={"subtitle2"}
             >
               <span style={{ fontWeight: "bold" }}>Certified Visa Cases: </span>
@@ -192,7 +222,7 @@ const EmployerDetails = (props) => {
             <br />
             <Typography
               display="inline"
-              className={classes.header1}
+              style={styles.header1}
               variant={"subtitle2"}
             >
               <span style={{ fontWeight: "bold" }}>Denied Visa Cases: </span>
@@ -202,7 +232,7 @@ const EmployerDetails = (props) => {
           </CardContent>
           <CardActions>
             <Button size="small" component={Link} to="/">
-              Company Listing Page
+             <HomeIcon/> Company Listing Page
             </Button>
           </CardActions>
           {jobTitles.length ? (
@@ -215,19 +245,19 @@ const EmployerDetails = (props) => {
                   aria-label="show more"
                 >
                   <ExpandMoreIcon />
-                  <Typography variant="body2" color="textSecondary">Expand</Typography>
+                  <Typography variant="body2" color="textSecondary">
+                    Expand
+                  </Typography>
                 </ExpandMore>
               </CardActions>
               <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                   <Typography
                     display="inline"
-                    className={classes.header1}
+                    style={styles.header1}
                     variant={"subtitle2"}
                   >
-                    <span style={{ fontWeight: "bold" }}>
-                     Jobs:{" "}
-                    </span>
+                    <span style={{ fontWeight: "bold" }}>Recent Job Listings: </span>
                     <ul
                       style={{
                         display: "flex",
@@ -249,10 +279,12 @@ const EmployerDetails = (props) => {
             ""
           )}
         </Card>
-        <br/>
-        <div>
+        <br />
+        {jobTitles.length ?
+        (<div>
           <EmployerJobTitleSalaryGraph />
-        </div>
+        </div>) : ""
+         }
         {/* <br/>
         <div>
           <EmployerJobTitleSalaryGraph />
