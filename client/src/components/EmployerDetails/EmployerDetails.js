@@ -8,7 +8,7 @@ import {
   CardHeader,
   Avatar,
 } from "@mui/material";
-import { red } from "@mui/material/colors";
+import { red,blue } from "@mui/material/colors";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -42,7 +42,7 @@ const styles = {
     marginTop: "auto",
     borderRadius: 5,
     border: "1px solid #1e8678",
-    boxShadow: "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);",
+    boxShadow: "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)",
   },
   cardSecond: {
     flex: 1,
@@ -142,7 +142,7 @@ const EmployerDetails = (props) => {
         <Card style={styles.card} variant="outlined">
           <CardHeader
             avatar={
-              <Avatar sx={{ bgcolor: red[500] }} aria-label="companyName">
+              <Avatar sx={{ backgroundColor: '#007aca' }} aria-label="companyName">
                 {nameSplit[0]}
               </Avatar>
             }
@@ -154,7 +154,7 @@ const EmployerDetails = (props) => {
               <Typography
                 display="inline"
                 style={styles.header1}
-                variant={"subtitle2"}
+                // variant={"subtitle2"}
               >
                 <span style={{ fontWeight: "bold" }}>Name:</span>
               </Typography>
@@ -169,7 +169,7 @@ const EmployerDetails = (props) => {
               <Typography
                 display="inline"
                 style={styles.header1}
-                variant={"subtitle2"}
+                // variant={"subtitle2"}
               >
                 <span style={{ fontWeight: "bold" }}>Address:  </span>
               </Typography>
@@ -190,31 +190,10 @@ const EmployerDetails = (props) => {
               </Typography>
             </div>
             <br />
-            {/* <Typography
-              display="inline"
-              style={styles.header1}
-              variant={"subtitle2"}
-            >
-              <span style={{ fontWeight: "bold" }}>ADDRESS: </span>
-              {showData &&
-              showData.employer_address &&
-              showData.employer_city &&
-              showData.employer_postal_code &&
-              showData.employer_state
-                ? showData.employer_address +
-                  "," +
-                  showData.employer_city +
-                  "," +
-                  showData.employer_postal_code +
-                  "," +
-                  showData.employer_state
-                : "N/A"}
-            </Typography> */}
-            <br />
             <Typography
               display="inline"
               style={styles.header1}
-              variant={"subtitle2"}
+              //variant={"subtitle2"}
             >
               <span style={{ fontWeight: "bold" }}>Certified Visa Cases: </span>
               {showData.certified_count ? showData.certified_count : "0"}
@@ -223,7 +202,7 @@ const EmployerDetails = (props) => {
             <Typography
               display="inline"
               style={styles.header1}
-              variant={"subtitle2"}
+              //variant={"subtitle2"}
             >
               <span style={{ fontWeight: "bold" }}>Denied Visa Cases: </span>
               {showData.denied_count ? showData.denied_count : "0"}
@@ -255,7 +234,7 @@ const EmployerDetails = (props) => {
                   <Typography
                     display="inline"
                     style={styles.header1}
-                    variant={"subtitle2"}
+                   // variant={"subtitle2"}
                   >
                     <span style={{ fontWeight: "bold" }}>Recent Job Listings: </span>
                     <ul
