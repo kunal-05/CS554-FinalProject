@@ -25,6 +25,7 @@ function SignUp() {
     } catch (error) {
       alert(error);
     }
+    window.location.reload();
   };
 
   if (currentUser) {
