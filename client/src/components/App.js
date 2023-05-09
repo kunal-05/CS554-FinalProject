@@ -11,6 +11,7 @@ import Company from './companyDetails/Company'
 import Index from './Graphs/Index'
 import {AuthProvider} from '../firebase/Auth';
 import PrivateRoute from './PrivateRoute';
+import EmployerDetails from './EmployerDetails/EmployerDetails';
 function App() {
   return (
     <AuthProvider>
@@ -21,7 +22,9 @@ function App() {
           </header>
         </div>
         <Routes>
-          <Route path='/' element={<SignIn />} />
+          <Route path='/' element={<Company />} />
+          <Route path='/graphs' element={<Index />} />
+          <Route path="/employee/:id" element = {<EmployerDetails/>}/>
           <Route path='/home' element={<PrivateRoute />}>
             <Route path='/home' element={<Home />} />
           </Route>
