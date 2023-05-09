@@ -25,7 +25,7 @@ const CustomBarChart = () => {
       <CartesianGrid strokeDasharray="3 3" />
       <Tooltip />
       <Legend />
-      <Bar dataKey="certified_count" fill="darkred" />
+      <Bar dataKey="certified_count" fill="#007dba" />
     </BarChart>
   );
 };

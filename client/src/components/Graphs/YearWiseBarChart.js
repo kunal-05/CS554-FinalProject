@@ -18,8 +18,8 @@ const Chart = () => {
         <YAxis />
         <Legend />
         <Tooltip />
-        <Bar dataKey="certified" fill="#239B56" />
-        <Bar dataKey="denied" fill="#E74C3C" />
+        <Bar dataKey="certified" fill="#008a27" />
+        <Bar dataKey="denied" fill="#e13009" />
       </BarChart>
     );
   };

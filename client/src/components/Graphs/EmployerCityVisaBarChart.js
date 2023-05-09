@@ -56,7 +56,7 @@ import {
         <CartesianGrid strokeDasharray="3 3" />
         <Tooltip />
         <Legend />
-        <Bar dataKey="certified_count" fill="#2E86C1" />
+        <Bar dataKey="certified_count" fill="#007dba" />
       </BarChart>
     );
   };
