@@ -62,6 +62,7 @@ async function UpdateProfile(
             education: education,
             portfolio: portfolio,
             employment: employment,
+            photoURL: "",
         };
         await userRef
             .set(data)
