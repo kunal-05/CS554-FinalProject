@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import {
+    Avatar,
     Grid,
     TextField,
     Select,
@@ -16,6 +17,7 @@ import {
     Paper,
     ThemeProvider,
     createTheme,
+    Input,
 } from "@mui/material";
 import GetAllCities from "../../data/cities";
 import GetAllStates from "../../data/states";
@@ -36,23 +38,23 @@ import {
     compareDate,
 } from "../../helpers";
 import { AuthContext } from "../../firebase/Auth";
+import axios from "axios";
+import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import { storage } from "../../firebase/Firebase";
 
 function EditProfile() {
-    //Create state to fetch existing data
     const [existingData, setExistingData] = useState();
     const [firstname, setFirstName] = useState("");
     const [lastname, setLastName] = useState("");
     const [emailid, setEmailId] = useState("");
     const { currentUser } = useContext(AuthContext);
     const [userID, setUserID] = useState(currentUser.uid);
-    //Create async function to fetch data from firebase
     async function fetchExistingData() {
         const userRef = firebaseApp.firestore().collection("users").doc(userID);
         const doc = await userRef.get();
         if (!doc.exists) {
             console.log("No such document!");
         } else {
-            //console.log("Document data:", doc.data());
             setExistingData(doc.data());
             setFirstName(doc.data().userInfo.firstName);
             setLastName(doc.data().userInfo.lastName);
@@ -64,8 +66,6 @@ function EditProfile() {
             setEmployment(doc.data().employment);
         }
     }
-    //Insert name, lastname and email directly inside unserINfo
-
     const theme = createTheme();
     const [userInfo, setUserInfo] = useState({
         firstName: "",
@@ -79,7 +79,6 @@ function EditProfile() {
         zipCode: "",
         country: "",
     });
-
     const [workExperience, setWorkExperience] = useState({
         jobTitle: "",
         companyName: "",
@@ -87,7 +86,6 @@ function EditProfile() {
         endDate: "",
         jobDescription: "",
     });
-
     const [education, setEducation] = useState({
         universityName: "",
         degree: "",
@@ -96,13 +94,11 @@ function EditProfile() {
         endDate: "",
         gpa: "",
     });
-
     const [portfolio, setPortfolio] = useState({
         githubUrl: "",
         linkedInUrl: "",
         otherUrl: "",
     });
-
     const [employment, setEmployment] = useState({
         ethnicity: "",
         gender: "",
@@ -110,17 +106,82 @@ function EditProfile() {
         protectedVeteran: "",
         disability: "",
     });
+    const [profileUrl, setProfileUrl] = useState("");
+
+    async function UploadPhoto(file) {
+        //this function uploads the blob to firebase
+        if (!file) {
+            alert("Please choose a file first!");
+        }
+        const storageRef = ref(storage, `/profiles/${currentUser.uid}`);
+        const uploadTask = uploadBytesResumable(storageRef, file);
+        uploadTask.on(
+            "state_changed",
+            (snapshot) => {},
+            (err) => console.log(err),
+            () => {
+                // download url
+                getDownloadURL(uploadTask.snapshot.ref).then((url) => {
+                    setProfileUrl(url);
+                    firebaseApp.auth().currentUser.updateProfile({
+                        photoURL: url,
+                    });
+                    firebaseApp
+                        .firestore()
+                        .collection("users")
+                        .doc(currentUser.uid)
+                        .update({ photoURL: url })
+                        .then(() => {
+                            console.log("Document successfully written!");
+                        })
+                        .catch((error) => {
+                            console.error("Error writing document: ", error);
+                        });
+                });
+            }
+        );
+        return profileUrl;
+    }
+
+    const handleImageUpload = async (e) => {
+        const formData = new FormData();
+        if (!e.target.files) {
+            return;
+        }
+        if (
+            e.target.files[0].type !== "image/jpeg" &&
+            e.target.files[0].type !== "image/png"
+        ) {
+            return;
+        }
+        formData.append("file", e.target.files[0]);
+        //Sending data to image Magic API
+        console.log(formData);
+        const response = await axios.post(
+            "http://localhost:8000/photo",
+            formData,
+            {
+                responseType: "blob",
+            }
+        );
+        console.log(response);
+        await UploadPhoto(response.data);
+    };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             //Validating all the fields
             checkString(userInfo.firstName, "First Name");
-            checkString(userInfo.lastName, "Last Name");
+            if (userInfo.lastName && userInfo.lastName.length > 0) {
+                checkString(userInfo.lastName, "Last Name");
+            }
             checkEmail(userInfo.emailId);
             checkDate(userInfo.date, "Date of Birth");
             checkString(userInfo.address1, "Address 1");
-            checkString(userInfo.address2, "Address 2");
+            if (userInfo.address2 && userInfo.address2.length > 0) {
+                checkString(userInfo.address2, "Address 2");
+            }
             checkSelection(userInfo.city, "City");
             checkSelection(userInfo.state, "State");
             checkZipCode(userInfo.zipCode);
@@ -142,9 +203,15 @@ function EditProfile() {
             checkDate(education.endDate, "Education End Date");
             compareDate(education.startDate, education.endDate, "Education");
             checkNumber(education.gpa, "GPA");
-            checkUrl(portfolio.githubUrl, "Github URL");
-            checkUrl(portfolio.linkedInUrl, "LinkedIn URL");
-            checkUrl(portfolio.otherUrl, "Other URL");
+            if (portfolio.githubUrl && portfolio.githubUrl.length > 0) {
+                checkUrl(portfolio.githubUrl, "Github URL");
+            }
+            if (portfolio.linkedInUrl && portfolio.linkedInUrl.length > 0) {
+                checkUrl(portfolio.linkedInUrl, "LinkedIn URL");
+            }
+            if (portfolio.otherUrl && portfolio.otherUrl.length > 0) {
+                checkUrl(portfolio.otherUrl, "Other URL");
+            }
             checkSelection(employment.ethnicity, "Ethnicity");
             checkSelection(employment.gender, "Gender");
             checkSelection(employment.isAuthorized, "Authorization");
@@ -165,7 +232,7 @@ function EditProfile() {
 
     React.useEffect(() => {
         fetchExistingData();
-    }, []);
+    }, [profileUrl]);
 
     return (
         <React.Fragment>
@@ -178,9 +245,6 @@ function EditProfile() {
                         <Typography component="h1" variant="h4" align="center">
                             User Details
                         </Typography>
-                        {/* <UploadImage
-                            userId={"ee0f933b-ac4f-497a-9403-97fbda392155"}
-                        /> */}
                         {existingData && (
                             <form onSubmit={handleSubmit}>
                                 <Grid container spacing={3}>
@@ -190,6 +254,39 @@ function EditProfile() {
                                             User Information
                                         </Typography>
                                     </Grid>
+                                    <Grid item xs={12} sm={6}>
+                                        {existingData.photoURL ? (
+                                            <Avatar
+                                                alt="Profile Picture"
+                                                src={existingData.photoURL}
+                                                sx={{
+                                                    width: 150,
+                                                    height: 150,
+                                                }}
+                                            />
+                                        ) : (
+                                            <Avatar
+                                                sx={{
+                                                    width: 150,
+                                                    height: 150,
+                                                    bgcolor: "primary.main",
+                                                }}
+                                            ></Avatar>
+                                        )}
+                                    </Grid>
+                                    <Grid item xs={12} sm={6}>
+                                        <Typography variant="body1">
+                                            Upload Image
+                                        </Typography>
+                                        <Input
+                                            id="image"
+                                            type="file"
+                                            onChange={(e) => {
+                                                handleImageUpload(e);
+                                            }}
+                                        />
+                                    </Grid>
+
                                     <Grid item xs={12} sm={6}>
                                         {/* <TextField
                                         id="firstName"
@@ -310,7 +407,6 @@ function EditProfile() {
                                         <TextField
                                             id="address2"
                                             name="address2"
-                                            required
                                             label="Address Line 2"
                                             variant="standard"
                                             fullWidth

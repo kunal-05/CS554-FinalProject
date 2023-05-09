@@ -39,11 +39,12 @@ import { AuthContext } from "../../firebase/Auth";
 function AddProfile() {
     const theme = createTheme();
     const { currentUser } = useContext(AuthContext);
+    console.log(currentUser);
     const userID = currentUser.uid;
     const [userInfo, setUserInfo] = useState({
         firstName: "",
         lastName: "",
-        emailId: "",
+        emailId: currentUser.email,
         date: "",
         address1: "",
         address2: "",
@@ -84,16 +85,22 @@ function AddProfile() {
         disability: "",
     });
 
+    const [profileUrl, setProfileUrl] = useState("");
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             //Validating all the fields
             checkString(userInfo.firstName, "First Name");
-            checkString(userInfo.lastName, "Last Name");
+            if (userInfo.lastName && userInfo.lastName.length > 0) {
+                checkString(userInfo.lastName, "Last Name");
+            }
             checkEmail(userInfo.emailId);
             checkDate(userInfo.date, "Date of Birth");
             checkString(userInfo.address1, "Address 1");
-            checkString(userInfo.address2, "Address 2");
+            if (userInfo.address2 && userInfo.address2.length > 0) {
+                checkString(userInfo.address2, "Address 2");
+            }
             checkSelection(userInfo.city, "City");
             checkSelection(userInfo.state, "State");
             checkZipCode(userInfo.zipCode);
@@ -115,9 +122,15 @@ function AddProfile() {
             checkDate(education.endDate, "Education End Date");
             compareDate(education.startDate, education.endDate, "Education");
             checkNumber(education.gpa, "GPA");
-            checkUrl(portfolio.githubUrl, "Github URL");
-            checkUrl(portfolio.linkedInUrl, "LinkedIn URL");
-            checkUrl(portfolio.otherUrl, "Other URL");
+            if (portfolio.githubUrl && portfolio.githubUrl.length > 0) {
+                checkUrl(portfolio.githubUrl, "Github URL");
+            }
+            if (portfolio.linkedInUrl && portfolio.linkedInUrl.length > 0) {
+                checkUrl(portfolio.linkedInUrl, "LinkedIn URL");
+            }
+            if (portfolio.otherUrl && portfolio.otherUrl.length > 0) {
+                checkUrl(portfolio.otherUrl, "Other URL");
+            }
             checkSelection(employment.ethnicity, "Ethnicity");
             checkSelection(employment.gender, "Gender");
             checkSelection(employment.isAuthorized, "Authorization");
@@ -132,7 +145,7 @@ function AddProfile() {
                 employment
             );
         } catch (e) {
-            alert(`Error in submitting the form : ${e}`);
+            alert(`${e}`);
         }
     };
 
@@ -249,7 +262,6 @@ function AddProfile() {
                                     <TextField
                                         id="address2"
                                         name="address2"
-                                        required
                                         label="Address Line 2"
                                         variant="standard"
                                         fullWidth
