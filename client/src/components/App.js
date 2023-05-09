@@ -22,9 +22,7 @@ function App() {
           </header>
         </div>
         <Routes>
-          <Route path='/' element={<Company />} />
-          <Route path='/graphs' element={<Index />} />
-          <Route path="/employee/:id" element = {<EmployerDetails/>}/>
+          <Route path='/' element={<SignIn />} />
           <Route path='/home' element={<PrivateRoute />}>
             <Route path='/home' element={<Home />} />
           </Route>
