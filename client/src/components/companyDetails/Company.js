@@ -154,7 +154,7 @@ export default function CustomPaginationActionsTable() {
         label="Search Company"
         variant="outlined"
         value={searchTerm}
-        sx={{ width: 900 }}
+        sx={{ width: 900, color:'#756060' }}
         onChange={handleChange}
       />
 

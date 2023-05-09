@@ -47,6 +47,15 @@ function SignUp() {
               name='displayName'
               type='text'
               placeholder='Name'
+              style={{'background-color': "#edf5f3","padding":"8px",
+              "border-radius": "20px",
+              "border": "none",
+              "background-color": "#edf5f3",
+              "width": "350px",
+              "max-width": "100%",
+              "box-sizing": "border-box",
+              "margin-bottom": "10px",
+              "font-size": "16px"}}
             />
           </label>
         </div>
