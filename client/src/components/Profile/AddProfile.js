@@ -144,6 +144,7 @@ function AddProfile() {
                 portfolio,
                 employment
             );
+            window.location.reload();
         } catch (e) {
             alert(`${e}`);
         }
