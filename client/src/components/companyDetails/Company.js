@@ -151,13 +151,13 @@ export default function CustomPaginationActionsTable() {
     <div className="main-container">
       <TextField
         className="search-container"
+        variant="filled"
+        fullWidth
         label="Search Company"
-        variant="outlined"
         value={searchTerm}
-        sx={{ width: 900, color:'#756060' }}
         onChange={handleChange}
+        
       />
-
       <div className="TableCompany">
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 500 }} aria-label="custom pagination table">
