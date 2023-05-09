@@ -50,12 +50,16 @@ const Chart = () => {
         <YAxis />
         <Legend />
         <Tooltip />
-        <Bar dataKey="job_title" fill="#239B56" />
-        <Bar dataKey="salary" fill="#E74C3C" />
+        <Bar dataKey="job_title" fill="#007600" />
+        <Bar dataKey="salary" fill="#c32600" />
       </BarChart>
       <div>
         {/* <button onClick={handleDownload}>Download Graph</button> */}
-        <Button size="small" onClick={handleDownload}>
+        <Button
+          size="small"
+          style={{ color: "#0066ba" }}
+          onClick={handleDownload}
+        >
           <FileDownload /> Download Graph
         </Button>
       </div>
