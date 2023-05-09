@@ -4,6 +4,9 @@ function checkString(str, title) {
         throw new Error(` ${title} must be of type  string.`);
     str = str.trim();
     if (str.length === 0) throw new Error(` ${title} must not be empty.`);
+    const stringRegex = /[a-zA-Z]/;
+    if (!stringRegex.test(str))
+        throw new Error(`${title} must contain at least one alphabet.`);
 }
 
 function checkEmail(str) {
@@ -19,6 +22,7 @@ function checkEmail(str) {
 function checkNumber(num, title) {
     if (!num) throw new Error(` You must supply a ${title}.`);
     if (num < 0) throw new Error(` ${title} must be a positive number.`);
+    if (num > 10) throw new Error(` ${title} must be less than 10.`);
 }
 
 function checkZipCode(zipCode) {
