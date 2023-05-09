@@ -250,7 +250,7 @@ function EditProfile() {
                                 <Grid container spacing={3}>
                                     {/* User Information */}
                                     <Grid item xs={12}>
-                                        <Typography variant="h5">
+                                        <Typography component="h2" variant="h5">
                                             User Information
                                         </Typography>
                                     </Grid>
@@ -275,9 +275,9 @@ function EditProfile() {
                                         )}
                                     </Grid>
                                     <Grid item xs={12} sm={6}>
-                                        <Typography variant="body1">
-                                            Upload Image
-                                        </Typography>
+                                        <label for="image">
+                                            Upload Profile Picture
+                                        </label>
                                         <Input
                                             id="image"
                                             type="file"
@@ -570,7 +570,7 @@ function EditProfile() {
 
                                     {/* Work Experience */}
                                     <Grid item xs={12}>
-                                        <Typography variant="h5">
+                                        <Typography component="h2" variant="h5">
                                             Work Experience
                                         </Typography>
                                     </Grid>
@@ -723,7 +723,7 @@ function EditProfile() {
 
                                     {/* Education */}
                                     <Grid item xs={12}>
-                                        <Typography variant="h5">
+                                        <Typography component="h2" variant="h5">
                                             Education
                                         </Typography>
                                     </Grid>
@@ -924,7 +924,7 @@ function EditProfile() {
 
                                     {/* Portfolio */}
                                     <Grid item xs={12}>
-                                        <Typography variant="h5">
+                                        <Typography component="h2" variant="h5">
                                             Portfolio
                                         </Typography>
                                     </Grid>
@@ -1001,7 +1001,7 @@ function EditProfile() {
 
                                     {/* Equal Employment Opportunity */}
                                     <Grid item xs={12}>
-                                        <Typography variant="h5">
+                                        <Typography component="h2" variant="h5">
                                             Equal Employment Opportunity
                                         </Typography>
                                     </Grid>

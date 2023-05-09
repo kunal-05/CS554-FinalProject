@@ -164,7 +164,7 @@ function AddProfile() {
                             <Grid container spacing={3}>
                                 {/* User Information */}
                                 <Grid item xs={12}>
-                                    <Typography variant="h5">
+                                    <Typography component="h2" variant="h5">
                                         User Information
                                     </Typography>
                                 </Grid>
@@ -382,7 +382,7 @@ function AddProfile() {
 
                                 {/* Work Experience */}
                                 <Grid item xs={12}>
-                                    <Typography variant="h5">
+                                    <Typography component="h2" variant="h5">
                                         Work Experience
                                     </Typography>
                                 </Grid>
@@ -492,7 +492,7 @@ function AddProfile() {
 
                                 {/* Education */}
                                 <Grid item xs={12}>
-                                    <Typography variant="h5">
+                                    <Typography component="h2" variant="h5">
                                         Education
                                     </Typography>
                                 </Grid>
@@ -647,7 +647,7 @@ function AddProfile() {
 
                                 {/* Portfolio */}
                                 <Grid item xs={12}>
-                                    <Typography variant="h5">
+                                    <Typography component="h2" variant="h5">
                                         Portfolio
                                     </Typography>
                                 </Grid>
@@ -702,7 +702,7 @@ function AddProfile() {
 
                                 {/* Equal Employment Opportunity */}
                                 <Grid item xs={12}>
-                                    <Typography variant="h5">
+                                    <Typography component="h2" variant="h5">
                                         Equal Employment Opportunity
                                     </Typography>
                                 </Grid>
