@@ -2,7 +2,6 @@ import axios from "axios";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 import React, { useState, useEffect, useLayoutEffect } from "react";
 import html2canvas from "html2canvas";
-import { saveAs } from "file-saver";
 import jsPDF from "jspdf";
 import { useParams } from "react-router-dom";
 import Button from "@mui/material/Button";
