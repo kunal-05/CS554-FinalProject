@@ -22,7 +22,9 @@ function App() {
         </div>
         <Routes>
           <Route path='/' element={<SignIn />} />
-          <Route path="/employee/:id" Component = {EmployerDetails}/>
+          <Route path="/employee/:id" element = {<PrivateRoute />}>
+          <Route path="/employee/:id" element = {<EmployerDetails/>}/>
+          </Route>
           <Route path='/home' element={<PrivateRoute />}>
             <Route path='/home' element={<Company />} />
           </Route>
